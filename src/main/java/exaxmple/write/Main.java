@@ -10,6 +10,7 @@ public class Main {
 
         try (FileWriter fileWriter = new FileWriter(new File(fileName),true)){
             fileWriter.write("Text new line.");
+            // flush - the writing done immediately
             fileWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();
